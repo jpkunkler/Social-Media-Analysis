@@ -1,19 +1,19 @@
 {
-    "type": "FeatureCollection",
     "features": [
         {
-            "properties": {
-                "created_at": "Fri Jun 10 11:49:02 +0000 2016",
-                "text": "Wir freuen uns auf eine tolle Veranstaltung am kommenden Donnerstag\nAREND Symposium Industrie 4.0 https://t.co/E74DgG0OwS"
-            },
-            "type": "Feature",
             "geometry": {
-                "type": "Point",
                 "coordinates": [
                     6.8847999,
                     49.9747192
-                ]
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "text": "Wir freuen uns auf eine tolle Veranstaltung am kommenden Donnerstag\nAREND Symposium Industrie 4.0 https://t.co/E74DgG0OwS",
+                "created_at": "Fri Jun 10 11:49:02 +0000 2016"
             }
         }
-    ]
+    ],
+    "type": "FeatureCollection"
 }
