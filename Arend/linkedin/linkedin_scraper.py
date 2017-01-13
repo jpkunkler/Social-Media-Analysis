@@ -12,7 +12,8 @@ pages= ["https://www.linkedin.com/company-beta/8545501/",
         "https://www.linkedin.com/company-beta/1062181/",
         "https://www.linkedin.com/company-beta/3850436",
         "https://www.linkedin.com/company-beta/9357034/",
-        "https://www.linkedin.com/company-beta/62059/"
+        "https://www.linkedin.com/company-beta/62059/",
+        "https://www.linkedin.com/company-beta/32757/"
         ]
 
 count = 0
@@ -49,13 +50,13 @@ with open('linkedin_analysis.csv', 'w') as file:
         html=driver.page_source
         soup=BeautifulSoup(html, "lxml")
 
-        name = soup.find('h1', {'class':'company-main-info-company-name'}).getText().replace('employees', '').replace('\n', '')
+        name = soup.find('h1', {'class':'org-top-card-module__name mb1 Sans-26px-black-85%-light'}).getText().replace('\n', '')
         size = soup.find('span', {'class':'company-size'}).getText().replace(' ', '').replace(',', '')
         size_d = re.sub(r'[a-z]', "", size).replace('\n', '')
         employees = soup.find_all('a', {'class':'snackbar-description-see-all-link'})
         employees_count = re.sub("\D", "", employees[0].getText())
         updates = len(soup.find_all('article'))
-        follower = soup.find_all('p', {'class':'top-card-followers-count Sans-15px-black-55%'})
+        follower = soup.find_all('p', {'class':'org-top-card-module__followers-count Sans-15px-black-55%'})
         follower_count = re.sub("\D", "", follower[0].getText())
 
         driver.execute_script("window.scrollTo(0, 0);")

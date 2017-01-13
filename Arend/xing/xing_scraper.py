@@ -10,7 +10,8 @@ driver = webdriver.Firefox()
 pages= ["https://www.xing.com/companies/blumenbeckergruppe",
         "https://www.xing.com/companies/arendprozessautomationgmbh",
         "https://www.xing.com/companies/ksvkoblenzersteuerungs-undverteilungsbaugmbh",
-        "https://www.xing.com/companies/beckhoffautomationgmbh&co.kg"
+        "https://www.xing.com/companies/beckhoffautomationgmbh&co.kg",
+        "https://www.xing.com/companies/pilzgmbh&co.kg"
         ]
 with open('xing_analysis.csv', 'w') as file:
     w = csv.writer(file)
