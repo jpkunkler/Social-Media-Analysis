@@ -12,6 +12,15 @@ Extracted information and data of Arend's Competitors from the following social 
 - LinkedIn
 - Xing
 
+Extraction was done by using the public API's (Facebook & Twitter) as well as done by hand for LinkedIn and Xing due to the current lack of addressable API's by those providers.
+
 ## Data Analysis with Python
 The included iPython Notebooks contain my entire analysis of all mined SME's.
 This data was the foundation of my written Bachelor Thesis.
+
+Tools which were mainly used:
+- Numpy
+- Pandas
+- Matplotlib
+- Seaborn
+- Plotly
