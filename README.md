@@ -24,3 +24,6 @@ Tools which were mainly used:
 - Matplotlib
 - Seaborn
 - Plotly
+
+### Additional Usage of R
+Some additional visualizations (i.e. Twitter WordCloud) were done in the R Programming Language.
